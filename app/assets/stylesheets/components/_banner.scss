@@ -1,0 +1,16 @@
+.banner {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-size: cover;
+}
+.container h1 {
+  color: white;
+  position: relative;
+  top: -90px;
+  font-size: 70px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px black;
+  font-family: $title-font;
+}
