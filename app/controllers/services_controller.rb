@@ -38,7 +38,7 @@ class ServicesController < ApplicationController
   private
 
   def service_params
-    params.require(:services).permit(:brand, :part, :description, :level, :video_url)
+    params.require(:services).permit(:brand, :part, :description, :level, :video_url, :thumbnail)
   end
 
   def find_service
