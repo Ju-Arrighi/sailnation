@@ -63,6 +63,10 @@
     <section id="services" class="section">
       <div class="title">
         <h2>Our<span> Services</span></h2>
+        <div class="buttons">
+          <%= link_to 'All Services', services_path(@services), class: "btn btn-primary"%>
+          <%= link_to 'Create a Service', new_service_path(@service), class: "btn btn-primary"%>
+        </div>  
         <div class="service-container">
             <div class="background-service">
               <div class="box1">
