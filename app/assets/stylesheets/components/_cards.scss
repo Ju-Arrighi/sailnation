@@ -171,4 +171,77 @@ h6 {
   }
   
   
-} 
+}
+
+.service-container{  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: .2rem;
+  justify-content: center;
+}
+
+.background-service{
+  background-image: url("service4.jpg");
+  height: 350px;
+  width: 700px;
+  background-repeat: no-repeat;
+  margin: 5% auto;
+  padding:20px;
+  border-radius: 4px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  position: relative;
+  top: 30px;
+  left:105px;
+  background-size: cover;
+  background-position: center;
+  min-height: 30vh;
+  background-position-y: -70px;
+}
+
+.background-service2{
+  background-image: url("service2.jpg");
+  height: 350px;
+  width: 700px;
+  background-repeat: no-repeat;
+  margin: 5% auto;
+  padding:20px;
+  border-radius: 4px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  position: relative;
+  top: 30px;
+  right:105px;
+  background-size: cover;
+  background-position-y: -50px;
+  min-height: 30vh;
+}
+
+.extra-container{  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: .2rem;
+  justify-content: center;
+  position: relative;
+  bottom: 120px;
+}
+
+.background-service3{
+  background-image: url("service3.jpg");
+  height: 350px;
+  width: 700px;
+  background-repeat: no-repeat;
+  margin: 5% auto;
+  padding:20px;
+  border-radius: 4px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  position: relative;
+  top: 30px;
+  background-size: cover;
+  background-position: center;
+  min-height: 30vh;
+  background-position-y: -40px;
+}
+
