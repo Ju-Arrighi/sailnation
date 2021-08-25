@@ -1,24 +1,38 @@
 class ServicesController < ApplicationController
+  before_action :find_service, only: [:show, :edit, :update]
+
   def index
     @services = Service.all
   end
 
+  def show
+  end
+
   def new
-    @services = Service.new
+    @service = Service.new
   end
 
   def create
-    @services = Service.new(params[:services])
-    @services.save
-    if @services.save
-      redirect_to services_path(@services)
+    @service = Service.new(service_params)
+    @service.user = current_user
+    if @service.save
+    # criar uma iteração com as informações que vão estar no card do serviço
+    # terminar a iteração e redirecionar para redirect_to services_path antes do else 
     else
       render :new
     end
   end
 
-  def show
-    @services = Service.find(params[:id])
+  def edit
+  end
+
+  def update
+    @service.update(service_params)
+    if @service.save!
+      redirect_to services_path
+    else
+      render :edit
+    end  
   end
 
   private
@@ -27,4 +41,6 @@ class ServicesController < ApplicationController
     params.require(:services).permit(:brand, :part, :description, :level, :video_url)
   end
 
-end
+  def find_service
+    @service = Service.find(params[:id])
+  end
