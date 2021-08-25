@@ -32,7 +32,8 @@ puts 'Creating Users..'
         part: "Engine block",
         description: "These is the text field for the database",
         level: "easy",
-        video_url: "https://source.unsplash.com/random"
+        video_url: "https://source.unsplash.com/random",
+        thumbnail: "http://img.youtube.com/vi/d9WwSWk0zGI/hqdefault.jpg"
       )
       service.user = user
       service.save!
