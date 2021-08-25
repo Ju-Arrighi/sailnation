@@ -27,7 +27,7 @@ class ServicesController < ApplicationController
   end
 
   def update
-    @service.update(services_params)
+    @service.update(service_params)
     if @service.save!
       redirect_to services_path
     else
