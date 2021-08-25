@@ -1,12 +1,86 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: linear-gradient(to top, rgba(63, 152, 212, 0.5), rgba(0, 0, 0, 0.7));
 }
 
+.nav-item{
+  font-size: 18px;
+}
+
+#home {
+  position: relative;
+  top: 0.5rem;
+}
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.links-container {
+  height: 58px;
+  // overflow: hidden;
+  // transition: all 0.3s linear;
+  // display: flex;
+  // justify-content: center;
+  
+}
+
+#linkserv {
+  position: relative;
+  left: 47px;
+}
+#linkabout {
+  position: relative;
+  left: 66px;
+}
+
+// @media screen and (width: 992px) {
+//   #linkserv {
+//     position: relative;
+//     left: 47px;
+//   }
+//   #linkabout {
+//     position: relative;
+//     left: 66px;
+//   }
+// }
+
+// @media screen and (width: 768px) {
+//   #linkserv {
+//     position: relative;
+//     left: 47px;
+//   }
+//   #linkabout {
+//     position: relative;
+//     left: 66px;
+//   }
+// }
+// @media screen and (width: 480px) {
+//   #linkserv {
+//     position: relative;
+//     left: -3px;
+//   }
+//   #linkabout {
+//     position: relative;
+//     left: 16px;
+//   }
+// }
+
+.links a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  display: block;
+  transition: all 0.3s linear;
+  font-weight: bold;
+  text-decoration: none;
+}
+.links a:hover {
+  color: rgb(0, 0, 0);
+  // font-size: 23px;
+  // text-shadow: .5px .5px 1px black;
 }

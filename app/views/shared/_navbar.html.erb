@@ -7,13 +7,22 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
+  <div class="links-container">
+    <ul class="links">
+      <li>
+        <a href="#about" id="linkabout"class="scroll-link">about</a>
+      </li>
+      <li>
+        <a href="#services" id="linkserv" class="scroll-link">services</a>
+      </li>
+    </ul>  
+  </div>     
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
-        </li>
+        <li class="nav-item active" id="home">
+          <%= link_to "Home", "#", class: "nav-link", class: "scroll-link" %>
+        </li>    
         <li class="nav-item">
           <%= link_to "Messages", "#", class: "nav-link" %>
         </li>
