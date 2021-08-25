@@ -12,12 +12,14 @@
 <div class="card-container">
   <% @services.each do |service| %>
       <div class="card-service">
-        <img src="<%= service.video_url %>" />
+        <img src="<%= service.thumbnail %>" />
         <%# how to pass the url for the video????? !!!!! %>
       <div class="card-service-infos">
         <div>
           <h2><%= service.part %></h2>
           <p><%= service.description %></p>
+          <p><%= service.brand %></p>
+          <p><%= service.user %></p>
         </div>
       <h2 class="card-service">٭٭٭٭</h2>
       <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="card-service-user avatar-bordered" />
@@ -25,4 +27,3 @@
   </div>
   <% end %>
 </div>
-
