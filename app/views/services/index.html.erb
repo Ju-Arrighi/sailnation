@@ -7,8 +7,9 @@
     </button>
   </div>
 <% end %>
+
 <ul>
-  <% @services.each do |service|
+  <% @services.each do |service| %>
     <li><%= service.brand %> - <%= service.part %></li>
   <% end %>
 </ul>

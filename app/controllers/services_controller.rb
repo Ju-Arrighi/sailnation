@@ -17,7 +17,7 @@ class ServicesController < ApplicationController
     @service.user = current_user
     if @service.save
     # criar uma iteração com as informações que vão estar no card do serviço
-    # terminar a iteração e redirecionar para redirect_to services_path antes do else 
+    # terminar a iteração e redirecionar para redirect_to services_path antes do else
     else
       render :new
     end
@@ -32,7 +32,7 @@ class ServicesController < ApplicationController
       redirect_to services_path
     else
       render :edit
-    end  
+    end
   end
 
   private
@@ -44,3 +44,4 @@ class ServicesController < ApplicationController
   def find_service
     @service = Service.find(params[:id])
   end
+end
