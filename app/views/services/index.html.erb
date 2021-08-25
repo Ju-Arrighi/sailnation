@@ -9,18 +9,18 @@
 <% end %>
 
 
-  <% @services.each do |service| %>
-    <p><%= service.brand %> - <%= service.part %></p>
- <div class="card-service">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-  <%# how to pass the url for the video????? !!!!! %>
-  <div class="card-service-infos">
-    <div>
-      <h2><%= service.part %></h2>
-      <p><%= service.description %></p>
-    </div>
-    <h2 class="card-service">£99.99</h2>
-    <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="card-service-user avatar-bordered" />
+<% @services.each do |service| %>
+  <p><%= service.brand %> - <%= service.part %></p>
+    <div class="card-container">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <%# how to pass the url for the video????? !!!!! %>
+    <div class="card-container-infos">
+      <div>
+        <h2><%= service.part %></h2>
+        <p><%= service.description %></p>
+      </div>
+    <h2 class="card-container">٭٭٭٭</h2>
+    <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="card-container-user avatar-bordered" />
   </div>
 </div>
  <% end %>
