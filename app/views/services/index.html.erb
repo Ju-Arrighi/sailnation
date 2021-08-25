@@ -11,16 +11,16 @@
 
 <% @services.each do |service| %>
   <p><%= service.brand %> - <%= service.part %></p>
-    <div class="card-container">
+    <div class="card-service">
       <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
       <%# how to pass the url for the video????? !!!!! %>
-    <div class="card-container-infos">
+    <div class="card-service-infos">
       <div>
         <h2><%= service.part %></h2>
         <p><%= service.description %></p>
       </div>
-    <h2 class="card-container">٭٭٭٭</h2>
-    <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="card-container-user avatar-bordered" />
+    <h2 class="card-service">٭٭٭٭</h2>
+    <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="card-service-user avatar-bordered" />
   </div>
 </div>
  <% end %>
