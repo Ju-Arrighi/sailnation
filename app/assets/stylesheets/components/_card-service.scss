@@ -1,6 +1,9 @@
-.card-service {
+
+
+
+ .card-service {
   overflow: hidden;
-  background: white;
+  background: red;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
@@ -32,6 +35,14 @@
 }
 
 .card-service-infos .card-service-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+
+.card-service-rating {
   position: absolute;
   right: 16px;
   top: -20px;
