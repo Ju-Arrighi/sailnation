@@ -9,21 +9,22 @@
 <% end %>
 
 
-<div class="card-container">
-  <% @services.each do |service| %>
-      <div class="card-service">
-        <img src="<%= service.thumbnail %>" />
-        <%# how to pass the url for the video????? !!!!! %>
-      <div class="card-service-infos">
-        <div>
-          <h2><%= service.part %></h2>
-          <p><%= service.description %></p>
-          <p><%= service.brand %></p>
-          <p><%= service.user %></p>
+<div class="content">
+  <div class="cards">
+    <% @services.each do |service| %>
+    <div class="card">
+      <div class="card-service-container">
+        <img src="<%= service.thumbnail %>" class="card-service-container-image" />
+          <div class="card-service-container-infos">
+            <h2><%= service.part %></h2>
+            <p><%= service.description %></p>
+            <p><%= service.brand %></p>
+          </div>
+          <div class="card-servive-container-avatar">
+            <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="avatar-bordered" />
+          </div>
         </div>
-      <h2 class="card-service">٭٭٭٭</h2>
-      <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="card-service-user avatar-bordered" />
     </div>
+    <% end %>
   </div>
-  <% end %>
 </div>
