@@ -11,7 +11,7 @@ puts 'Cleaning up database..'
 Service.destroy_all
 User.destroy_all
 
-# Review.destroy_all
+Review.destroy_all
 
 puts 'Creating Users..'
 
@@ -37,6 +37,16 @@ puts 'Creating Users..'
       )
       service.user = user
       service.save!
+
+      6.times do
+        review = Review.new(
+          content: Faker::ChuckNorris.fact,
+          stars: 5
+        )
+        review.user = user
+        review.service = service
+        review.save!
+      end
     end
 end
 
@@ -52,3 +62,7 @@ service1 = Service.new(brand: "Cool boat brand", part: "Engine block", descripti
 service1.user = ju
 service1.save!
 puts "worked!"
+
+
+
+# review seeds

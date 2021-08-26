@@ -1,18 +1,15 @@
-<h1> Hello from the services show file for <% service.id</h1>
-
-
-
+<h1> Hello from the services show file for <% @service.id %> </h1>
 
 <div class="content">
   <div class="cards">
 
     <div class="card">
       <div class="card-service-container">
-        <img src="<%= service.thumbnail %>" class="card-service-container-image" />
+        <img src="<%= @service.thumbnail %>" class="card-service-container-image" />
           <div class="card-service-container-infos">
-            <h2><%= service.part %></h2>
-            <p><%= service.description %></p>
-            <p><%= service.brand %></p>
+            <h2><%= @service.part %></h2>
+            <p><%= @service.description %></p>
+            <p><%= @service.brand %></p>
           </div>
           <div class="card-servive-container-avatar">
             <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="avatar-bordered" />
@@ -23,7 +20,12 @@
   </div>
 </div>
 
+<%# form for new reviews %>
 
+<%# show all reviews %>
 <% Review.all.each do |review| %>
-<%= if review.service.id == service.id %>
+  <% if review.service.id == @service.id %>
+  <h3><% review.title %></h3>
+  <p><% review.content %></p>
+  <% end %>
 <% end %>
