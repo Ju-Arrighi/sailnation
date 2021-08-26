@@ -1,0 +1,30 @@
+
+
+<img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/arthur-littm" />
+<%= link_to "Add New Service", new_service_path %>
+<%= link_to "Back", services_path %>
+
+<h1> Hello
+<%= @user.first_name %>
+</h1>
+
+<h3> Bio: </h3>
+<%= @user.bio %>
+
+
+  <% Service.all.each do |service| %>
+
+    <% if service.user.id == @user.id %>
+
+    <div class=“card-service”>
+      <img src=“https://kitt.lewagon.com/placeholder/users/arthur-littm” />
+      <div class=“card-service-infos”>
+        <div>
+          <h3><%= service.brand %> </h3>
+        </div>
+        <h4 class=“card-service-pricing”>Rating: </h4>
+        <img src=“https://kitt.lewagon.com/placeholder/users/krokrob” class=“card-service-user avatar-bordered” />
+      </div>
+    <% end %>
+  <% end %>
+</div>

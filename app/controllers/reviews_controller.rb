@@ -7,7 +7,7 @@ class ReviewsController < ApplicationController
       if @review.save
         redirect_to services_path(@review.service)
       else
-        render 'services/show'
+        render 'services'
       end
   end
 
