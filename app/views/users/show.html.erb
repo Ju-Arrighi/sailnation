@@ -9,22 +9,21 @@
 <h3> Bio: </h3>
 <%= @user.bio %>
 
+<%= link_to "Add New Service", new_service_path %>
 
-<% Service.all.each do |service| %>
+  <% Service.all.each do |service| %>
 
-<% raise %>
-<% if service.user.id == @user %>
-<div class=“card-service”>
-  <%# <img src=“https://kitt.lewagon.com/placeholder/users/arthur-littm” /> %>
-  <div class=“card-service-infos”>
-    <div>
-      <h2>Title here</h2>
-      <p>Short description here!</p>
-    </div>
-    <h2 class=“card-service-pricing”>£99.99</h2>
-    <%# <img src=“https://kitt.lewagon.com/placeholder/users/krokrob” class=“card-service-user avatar-bordered” /> %>
-  </div>
-<% end %>
+    <% if service.user.id == @user.id %>
 
-<% end %>
+    <div class=“card-service”>
+      <img src=“https://kitt.lewagon.com/placeholder/users/arthur-littm” />
+      <div class=“card-service-infos”>
+        <div>
+          <h3><%= service.brand %> </h3>
+        </div>
+        <h4 class=“card-service-pricing”>Rating: </h4>
+        <img src=“https://kitt.lewagon.com/placeholder/users/krokrob” class=“card-service-user avatar-bordered” />
+      </div>
+    <% end %>
+  <% end %>
 </div>
