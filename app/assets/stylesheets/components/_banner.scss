@@ -24,3 +24,20 @@
   text-shadow: 1px 1px 3px black;
   font-family: $title-font;
 }
+
+.services-banner {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+  opacity: .95;
+  height: 50vh;
+	max-height: 500px;
+ 
+}
