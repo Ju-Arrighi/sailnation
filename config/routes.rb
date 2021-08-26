@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
     resources :users, only: [:show]
 
+    resources :reviews, only: [:show, :create]
+
     # get 'dashboard' to: "pages#user"
 end
