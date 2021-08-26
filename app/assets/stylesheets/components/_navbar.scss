@@ -18,12 +18,33 @@
   color: white;
 }
 
-.nav-link {
-  color: white;
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  text-decoration: none;
+}
+
+a {
+  color: rgb(17, 99, 192);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  letter-spacing: 0.03rem;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 50px;
+}
+
+.nav-item .nav-link {
+  color: white;
 }
 
 .links-container {

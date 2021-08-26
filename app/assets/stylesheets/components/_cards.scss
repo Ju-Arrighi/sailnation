@@ -181,6 +181,8 @@ h6 {
   grid-auto-rows: auto;
   grid-gap: .2rem;
   justify-content: center;
+  position: relative;
+  bottom: 30px;
 }
 
 .background-service{
@@ -225,7 +227,8 @@ h6 {
   grid-gap: .2rem;
   justify-content: center;
   position: relative;
-  bottom: 120px;
+  bottom: 130px;
+  
 }
 
 .background-service3{

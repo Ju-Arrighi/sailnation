@@ -1,0 +1,20 @@
+.buttons{  
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: rgb(65, 97, 204);
+  border: none;
+  box-shadow: 1px 1px 2px black;
+  font-weight: medium;
+}
+
+
+
+.btn-primary:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: rgb(71, 145, 206);
+}
