@@ -1,4 +1,30 @@
 
+
+<img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/arthur-littm" />
+
 <h1> Hello
 <%= @user.first_name %>
 </h1>
+
+<h3> Bio: </h3>
+<%= @user.bio %>
+
+
+<% Service.all.each do |service| %>
+
+<% raise %>
+<% if service.user.id == @user %>
+<div class=“card-service”>
+  <%# <img src=“https://kitt.lewagon.com/placeholder/users/arthur-littm” /> %>
+  <div class=“card-service-infos”>
+    <div>
+      <h2>Title here</h2>
+      <p>Short description here!</p>
+    </div>
+    <h2 class=“card-service-pricing”>£99.99</h2>
+    <%# <img src=“https://kitt.lewagon.com/placeholder/users/krokrob” class=“card-service-user avatar-bordered” /> %>
+  </div>
+<% end %>
+
+<% end %>
+</div>
