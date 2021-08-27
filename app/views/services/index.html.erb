@@ -6,7 +6,7 @@
       <% @services.each do |service| %>
         <article class="thumb">
             <picture class="thumbnail">
-              <img src="<%= service.thumbnail %>" class="thumb-service-container-image" />
+              <a href="<%= service_path(service.id) %>"><img src="<%= service.thumbnail %>" class="thumb-service-container-image" /></a>
             </picture>
             <div class="thumb-content">
               <ul>
@@ -15,9 +15,9 @@
                 <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="avatar-bordered" />
              </ul>
               <h6><%= service.description %></h6>
-            </div> 
+            </div>
          </article>
-       <% end %> 
+       <% end %>
     </section>
 
 
