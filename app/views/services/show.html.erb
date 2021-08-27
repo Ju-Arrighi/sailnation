@@ -1,18 +1,57 @@
-<h1> Hello from the services show file for <% @service.id %> </h1>
-
-<div class="content">
-  <div class="cards">
-
-    <div class="card">
-      <div class="card-service-container">
-        <img src="<%= @service.thumbnail %>" class="card-service-container-image" />
-          <div class="card-service-container-infos">
-            <h2><%= @service.part %></h2>
-            <p><%= @service.description %></p>
-            <p><%= @service.brand %></p>
+  <div class="container-user-services">
+    <div class="user-services">
+        <article class="thumb">
+          <picture class="thumbnail">
+            <img src="<%= @service.thumbnail %>" class="thumb-service-container-image" />
+          </picture>
+          <div class="thumb-content">
+            <ul>
+              <li><p><%= @service.brand %></p>
+              <li><p><%= @service.part %></p>
+              <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="avatar-bordered" />
+            </ul>
+            <h6><%= @service.description %></h6>
           </div>
-          <div class="card-servive-container-avatar">
-            <img src="https://kitt.lewagon.com/placeholder/users/krokrob"  class="avatar-bordered" />
+        </article>
+    </div>  
+      <div class="reviews-container">
+        <div class="reviews-content">    
+          <% Review.all.each do |review| %>
+            <% if review.service.id == @service.id %>
+            <div class="notification">
+              <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large">
+              <i <%= review.stars %> class="fas fa-star star-yellow"></i>
+              <i class="fas fa-star star-yellow"></i>
+              <i class="fas fa-star star-yellow"></i>
+              <i class="fas fa-star star-yellow"><span>4.8</i>
+              <div class="notification-content">
+                <p><small>26/08/2021</small></p>
+                <p><%= review.content %></p>
+              </div>
+              <div class="notification-actions">
+                <a id="pencil" href="#"><i class="fas fa-pencil-alt"></i></a>
+                <a id="trash" href="#"><i class="far fa-trash-alt"></i></a>
+              </div>
+              <div class="review-stars"> <%# DON'T DELETE THIS EMPTY DIV%>
+              </div>
+            </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div> 
+
+      <%# form for new review %>
+      <div class="review-note">
+        <div class="review-notification">
+          <div class="notification-content ">
+            <%= simple_form_for @review do |f| %>
+              <div id="simple-form">
+                <%= f.input :content, placeholder: 'Enter a comment' %>
+                <%= f.submit class: "btn btn-form", id: "button-form" %>
+              </div>
+            <% end %>
+          <div class="notification-actions">
+          <%# comment stars here %>
           </div>
         </div>
     </div>
@@ -57,10 +96,4 @@
           <i class=“fas fa-search”></i> Post
         </button>
       </div>
-    </form>
   </div>
-
-  <div class="notification-actions">
-   <%# comment stars here %>
-  </div>
-</div>
