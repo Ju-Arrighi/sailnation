@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
     resources :reviews, only: [:show, :create]
 
-    
+
     # get 'dashboard' to: "pages#user"
+    #testing update
 end
