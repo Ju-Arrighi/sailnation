@@ -67,11 +67,6 @@ puts "worked!"
 
 # review seeds
 
-# boat repair videos:
-# httrack ->  https://www.channelcrawler.com/eng/results/68956/page:'n' with the wizard help..
-# cd ../../../../../wt7
-# cd www.channelcrawler.com/eng/results/68956
-
 # id's :
 0olfMv3jc9k
 EnbTuGFP57w
