@@ -120,6 +120,7 @@ footer p {
   animation: bounce 2s ease-in-out infinite;
 }
 
+
 .fas {
   text-decoration: none;
 }
@@ -169,4 +170,14 @@ footer p {
   color:#6bbaff;
   font-weight: bolder;
   
+}
+
+.services-banner h1 {
+  color: white;
+  position: relative;
+  top: 100px;
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px black;
+  font-family: $title-font;
 }

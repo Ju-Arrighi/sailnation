@@ -1,0 +1,99 @@
+.services-user-page {
+  display: flex;
+}
+
+.services-user-info {
+  align-items: center;
+}
+
+.container-user-services {
+  position: absolute;
+  left: 647px;
+  width: 40%;
+}
+
+.reviews-container {
+  position:relative;
+  top: 100px;
+}
+
+.reviews-content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification {
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.637);
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  right: 86px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+
+  .fa-star {
+    font-size: 11px;
+    color: rgb(228, 195, 10);
+
+    span {
+      font-size:20px;
+      color: black;
+      margin-left: 10px;
+    }
+  }
+
+  .notification-actions {
+    display: flex;
+    justify-content: flex-end;
+    text-shadow: none;
+  }
+  
+
+  #pencil {
+    padding-right: 10px;
+    text-decoration: none;
+    text-shadow: none;
+  }
+
+  #trash {
+    padding-left: 15px;
+    text-decoration: none;
+    text-shadow: none;
+    color: black;
+  }
+
+  .review-note {
+    position: absolute;
+    top:29rem;
+    right:50rem;
+    width: 30rem;
+    background-color: rgba(145, 211, 255, 0.267);
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+  }
+// I CAN'T EDDIT THIS FORM BOX WITHOUT CHANGING THE OTHER FKKK MEEE !!!
+
+//  .form-control {
+//    line-height: 1.5;
+//    font-size: 0.8rem;
+//    border-radius: 10px;
+//    width: 150%;
+//    height: calc(1.5em + 0.75rem + 4px);
+//    position: relative;
+//    right: 33px;
+//  }
+
+ #button-form {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 20px;
+  background-color: rgba(77, 141, 184, 0.267);
+  font-family: $title-font;
+  font-weight: bold;
+ }
+
+ #button-form:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  opacity: 0.95;
+ }
