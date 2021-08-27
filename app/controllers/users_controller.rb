@@ -2,13 +2,13 @@ class UsersController < ApplicationController
   before_action :find_user, only: [:show, :edit, :update]
 
   def show
+
     @user = User.find(params[:id])
-    @markers = @user.geocode.map do |user|
+    @markers = [
       {
-        lat: user.latitude,
-        lng: user.longitude
-      }
-    end
+        lat: @user.latitude,
+        lng: @user.longitude
+      }]
   end
 
   private
@@ -16,7 +16,6 @@ class UsersController < ApplicationController
   def find_user
     @user = User.find(params[:id])
   end
-
 end
 #  def index
 #     @users = User.all
