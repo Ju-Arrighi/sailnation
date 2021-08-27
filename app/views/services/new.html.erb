@@ -1,2 +1,15 @@
-<h1> Hello </h1>
-<%= %>
+<div class="container py-4">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-light-white rounded-bottom p-4 Larger shadow text-center">
+				<h5><strong>Create a Service</strong</h5>
+					<%= simple_form_for [@user, @service] do |f| %>
+            <%= f.input :brand, as: :text, placeholder: 'Enter the Boat Brand'%>
+            <%= f.input :part, as: :text, placeholder: 'Enter the Boat Part'%>
+						<%= f.input :description, as: :text, placeholder: 'Enter a Description'%>
+						<%= f.submit class: "btn btn-form", id: "button-form" %>
+					<% end %>
+	    </div>
+    </div>
+  </div>
+</div>
