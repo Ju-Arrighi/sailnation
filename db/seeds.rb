@@ -124,7 +124,7 @@ puts 'Creating Users..'
     email: Faker::Internet.email,
     phone_num: Faker::PhoneNumber.phone_number,
     bio: Faker::Lorem.paragraph,
-    location: Faker::Address.street_address,
+    location: Faker::Address.city,
     password: "123456"
     )
     puts "Creating Services..."

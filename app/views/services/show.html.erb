@@ -54,5 +54,46 @@
           <%# comment stars here %>
           </div>
         </div>
+    </div>
+
+  </div>
+</div>
+
+
+<%# show all reviews %>
+<% Review.all.each do |review| %>
+  <% if review.service.id == @service.id %>
+  <div class="notification">
+    <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large" />
+    <div class="notification-content">
+      <p><small>Date.day</small></p>
+      <p><%= review.content %></p>
+    </div>
+
+    <div class="notification-actions">
+      <a href="#">Edit <i class="fas fa-pencil-alt"></i></a>
+      <a href="#">Delete <i class="far fa-trash-alt"></i></a>
+    </div>
+
+    <div class="review-stars"> <%# yuhri, class review stars doesn't exist yet %>
+      <p><%= review.stars %></p>
+    </div>
+  </div>
+
+  <% end %>
+<% end %>
+
+<%# form for new review %>
+<div class="notification">
+  <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large" />
+  <div class="notification-content">
+    <p><small>14th January</small></p>
+
+    <form novalidate=“novalidate” class=“simple_form search” action=“/” accept-charset=“UTF-8" method=“get”><input name=“utf8" type=“hidden” value=“&#x2713;” />
+      <div class=“search-form-control form-group”>
+        <input class=“form-control string required” type=“text” name=“search[query]” id=“search_query” />
+        <button name=“button” type=“submit” class=“btn btn-flat”>
+          <i class=“fas fa-search”></i> Post
+        </button>
       </div>
   </div>
