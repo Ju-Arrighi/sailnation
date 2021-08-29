@@ -1,13 +1,13 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://res.cloudinary.com/yuhri/image/upload/v1629941542/steering-wheel_tbeocu.png" %>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon <%= yield(:navbar_class) %>">
+  <%= link_to "", class: "navbar-brand" do %>
+    <%# <%= image_tag "https://res.cloudinary.com/yuhri/image/upload/v1629941542/steering-wheel_tbeocu.png" %>
     <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="links-container">
+  <%# <div class="links-container">
     <ul class="links">
       <li>
         <a href="#about" id="linkabout"class="scroll-link">about</a>
@@ -16,13 +16,16 @@
         <a href="#services" id="linkserv" class="scroll-link">services</a>
       </li>
     </ul>  
-  </div>     
+  </div>      %>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active" id="home">
-          <strong><%= link_to "Home", root_path, class: "nav-link", class: "scroll-link" %></strong>
-        </li>    
+          <strong><%= link_to "Home", root_path, class: "nav-link" %></strong>
+        </li> 
+        <li class="nav-item"> 
+          <%= link_to "Services", services_path(@services), class: 'nav-link' %>
+        </li>
         <li class="nav-item">
           <%= link_to "Messages", "#", class: "nav-link" %>
         </li>

@@ -1,4 +1,5 @@
 
+    <% content_for(:navbar_class, "navbar-home") %>
     <div class="banner" id="logo" style="background-image: linear-gradient(-225deg, rgba(0,71,198,0.1) 0%, rgba(0,36,61,0.1) 93%), url(<%= image_path 'banner1.jpg' %>);">
       <div class="container">
         <h1> SAILNATION </h1>
@@ -6,8 +7,9 @@
         <span class="typed-header"></span>
         <span class="typed-cursor"></span>
         </p>
-        <%= simple_form_for :search, url: root_path, method: :get do |f| %>
-        <div class="search-form-control form-group">
+        <%= link_to "Get Started", new_user_session_path, class: "btn btn-lg btn-primary" %>
+        <%# <%= simple_form_for :search, url: root_path, method: :get do |f| %>
+        <%# <div class="search-form-control form-group">
           <input class="form-control string required" type="text" name="search[query]" id="search_query"  />
           <button name="button" type="submit" class="btn btn-flat">
             <i class="fas fa-search"></i> Search
@@ -16,40 +18,39 @@
        <% end %>
       </div>
     </div>
- 
-  <div class="container">
-      <section id="about" class="section">
-        <div class="title">
-          <h2>About<span> us</span></h2>
+    <div class="main-container">
+      <%# <section id="about" class="section"> %>
+        <%# <div class="title">
+          <h2>Sail<span> Community</span></h2> %>
           <div class="card-container">
             <div class="background-img">
               <div class="box">
-                <span></span>
+                <%# <span></span>
                 <span></span>
                <span></span>
-               <span></span>
+               <span></span> %>
                <div class="content">
-                <h4><strong>Community</strong></h4>
-                <h6><strong>The sail community is huge and it's all around the globe !</strong></h6>
+                <%# <h4><strong>Community</strong></h4> %>
+                <h6>We are huge and connect sailers all around the world</h6>
               </div>
             </div>
           </div>
           <div class="background-img2">
             <div class="box">
+              <%# <span></span>
               <span></span>
               <span></span>
-              <span></span>
-              <span></span>
+              <span></span> %>
               <div class="content">
-                <h4><strong>Union</strong></h4>
-                <h6><strong>We are together in this adventure </strong>!</h6>
+                <%# <h4>Union</h4> %>
+                <h6>Enjoy yours sails having no concerns about safety </h6>
               </div>
             </div>
           </div>          
         </div>
       </section>
     </div>
-    <div class="animation-wrapper">
+    <%# <div class="animation-wrapper">
 		  <div class="water">
 			  <ul class="waves">
 				  <li class="wave-one" style="background-image: url('https://i.postimg.cc/7LtCC11Y/wave1.png');"></li>
@@ -61,61 +62,67 @@
 		  <div class="boat"></div>
       <div class="boat2"></div>
 	  </div>
-  </div>
+  </div> %>
   <div class="content">
-    <section id="services" class="section">
+    <%# <section id="services" class="section"> %>
       <div class="title">
-        <h2>Our<span> Services</span></h2>
+            <h2>
+            Here You Can
+            <span class="typed-js"></span>
+            <span class="typed-cursor">|</span>
+          </h2>
         <div class="buttons">
           <%= link_to 'All Services', services_path(@services), class: "btn btn-primary"%>
           <%= link_to 'Create a Service', new_service_path(@service), class: "btn btn-primary"%>
         </div>
-        <div class="text-center">
-          <h4>
-            Here You Can
-            <span class="typed-js"></span>
-            <span class="typed-cursor">|</span>
-          </h4>
-        </div>   
-        <div class="service-container">
-            <div class="background-service">
-              <div class="box1">
-               <div class="content1">
-              </div>
-            </div>
+  </div>      
+        <%# <div class="text-center">
+        </div>    %>
+        <div class="main-container">
+          <div class="service-container">
+            <div class="background-service" style="background-image: url(<%= image_path 'service4.jpg' %>);"></div>
+            <div class="background-service" style="background-image: url(<%= image_path 'service2.jpg' %>);"></div>
+            <div class="background-service" style="background-image: url(<%= image_path 'service3.jpg' %>);"></div>
           </div>
-          <div class="background-service2">
-            <div class="box2">
-              <div class="content2">
-              </div>
-            </div>
-          </div>          
+        </div>      
+                <%# <div class="box1">
+                <div class="content1">
+                </div> %>
+              <%# </div> %>
+            <%# </div>
+            <div class="background-service2">
+              <%# <div class="box2">
+                <div class="content2">
+                </div>
+              </div> %>
+            <%# </div>           %>
+              <%# <div class="background-service3"> %>
+                <%# <div class="service-box">
+                <div class="service-content">
+                </div> %>
+              <%# </div>  %>
+            <%# </div> %>
+          <%# </div>
+        </div>     %>
+    <%# </section> %>
+  <footer class="section">
+    <p>
+      SAILNATION&copy; - all rights reserved
+    </p>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>  
+      <div class="arrow-up">
+        <a class="scroll-link top-link" href="">
+          <i class="fas fa-arrow-up"></i>
+        </a>
       </div>
-      <div class="extra-container">
-            <div class="background-service3">
-              <div class="service-box">
-               <div class="service-content">
-              </div>
-            </div>
-          </div> 
-    </section>
-  </div>
-    <footer class="section">
-      <p>
-        SAILNATION&copy;
-        <span id="date"></span> - all rights reserved
-      </p>
-      <a class="scroll-link top-link" href="">
-        <i class="fas fa-arrow-up"></i>
-      </a>
-      <div class="footer-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </footer>
+    </div>
+  </footer>
   
 
 
