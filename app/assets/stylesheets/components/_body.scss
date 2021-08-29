@@ -9,15 +9,15 @@ html {
 //   box-sizing: border-box;
 // }
 
-body {
-  background: rgb(247, 247, 255);
-  color: rgb(18, 21, 68);
-  line-height: 1.5;
-  font-size: 0.875rem;
-}
+// body {
+//   background: rgb(247, 247, 255);
+//   color: rgb(18, 21, 68);
+//   // line-height: 1.5;
+//   // font-size: 0.875rem;
+// }
 h2 {
   font-family: $body-font;
-  font-size: 40px;
+  font-size: 35px;
 }
 ul {
   list-style-type: none;
@@ -26,7 +26,6 @@ ul {
 a {
   text-decoration: none;
 }
-
 
 // .section {
 //   padding-bottom: 5rem;
@@ -37,11 +36,11 @@ a {
 //   margin: 0 auto;
 //   max-width: 1170px;
 // }
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
+// @media screen and (min-width: 992px) {
+//   .section-center {
+//     width: 95vw;
+//   }
+// }
 main {
   min-height: 100vh;
   display: grid;
@@ -58,7 +57,7 @@ header {
   min-height: 100vh;
 }
 .banner {
-  min-height: 100vh;
+  min-height: 104vh;
   display: grid;
   place-items: center;
   text-align: center;
@@ -97,6 +96,8 @@ footer {
   background: linear-gradient(to bottom, rgba(63, 152, 212, 0.5), rgb(53, 53, 53));
   padding: 5rem 1rem;
 }
+
+
 footer p {
   color: white;
   text-align: center;
@@ -106,10 +107,10 @@ footer p {
 }
 
 .top-link {
-  font-size: 1.25rem;
-  position: absolute;
-  bottom: -129rem;
-  right: 58.5rem;
+  // font-size: 1.25rem;
+  // position: absolute;
+  // bottom: -129rem;
+  // right: 58.5rem;
   background: rgb(53, 193, 218);
   width: 2.3rem;
   height: 2.3rem;
@@ -117,7 +118,7 @@ footer p {
   place-items: center;
   border-radius: 0.5rem;
   color: white;
-  animation: bounce 2s ease-in-out infinite;
+  animation: bounce 4s ease-in-out infinite;
 }
 
 
@@ -156,7 +157,17 @@ footer p {
   padding: 0px 10px;
   position: relative;
   top: 10px;
+  margin-left: 0 auto;
 }
+
+.arrow-up {
+  display: flex;
+  justify-content: center;
+  margin-left: 23rem;
+  position: relative;
+  bottom: 1.2rem;
+}
+
 .footer-links a:hover {
   opacity: 1;
 }
